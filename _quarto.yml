@@ -1,0 +1,42 @@
+project:
+  type: website
+
+execute:
+  freeze: auto
+website:
+  title: Reproducible epidemiology in R
+  navbar:
+    background: primary
+    search: true
+    left:
+      - setup.qmd
+      - renv.qmd
+      - quarto.qmd
+      - gtsummary.qmd
+      - targets.qmd
+    right:
+      - text: "Data"
+        file: data.qmd
+
+format:
+  html:
+    theme: [journal, www/custom.scss]
+    css: www/styles.css
+    toc: true
+  revealjs:
+    slide-number: c/t
+    preview-links: auto
+    hash-type: number
+    hash-one-based-index: true
+    # pdf-max-pages-per-slide: 1
+    theme: 
+      - www/custom.scss
+    pointer:
+      color: 'red'
+      pointerSize: 16
+revealjs-plugins:
+  - pointer
+
+format-links: false
+highlight-style: nord
+editor: source
