@@ -1,0 +1,14 @@
+{
+  "hash": "6f3374305339ab6f1efaa47adf61e4da",
+  "result": {
+    "markdown": "---\ntitle: \"R projects\"\ntoc-location: left\n---\n\n\nThere's a famous [blog post](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/) about workflows in R[^1] about a talk Jenny Bryant gave that included this slide:\n\n[^1]: yes, R blog posts can be famous\n\n> If the first line of your R script is\n>\n> ``` r\n> setwd(\"C:\\Users\\jenny\\path\\that\\only\\I\\have\")\n> ```\n>\n> I will come into your office and SET YOUR COMPUTER ON FIRE 🔥.\n>\n> If the first line of your R script is\n>\n> ::: {.cell}\n> \n> ```{.r .cell-code}\n> rm(list = ls())\n> ```\n> :::\n>\n> I will come into your office and SET YOUR COMPUTER ON FIRE 🔥.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
