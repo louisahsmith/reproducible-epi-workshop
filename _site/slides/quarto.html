@@ -8,7 +8,7 @@
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.361">
+  <meta name="generator" content="quarto-1.4.339">
 
   <title>Reproducible epidemiology in R - quarto</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -221,7 +221,8 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -401,7 +402,7 @@
 <div style="height: 0px;">
 <div class="cell">
 <style type="text/css">
-div.callout-caution{border-left-color:#5e81ac !important}div.callout-caution.callout-style-default .callout-caption{background-color:#5e81ac !important}div.callout-caution.callout-style-default .callout-title{background-color:rgba(94,129,172,0.501961) !important}div.callout-note{border-left-color:#b48ead !important}div.callout-note.callout-style-default .callout-caption{background-color:#b48ead !important}div.callout-note.callout-style-default .callout-title{background-color:rgba(180,142,173,0.501961) !important}div.callout-important{border-left-color:#d08770 !important}div.callout-important.callout-style-default .callout-caption{background-color:#d08770 !important}div.callout-important.callout-style-default .callout-title{background-color:rgba(208,135,112,0.501961) !important}div.callout-warning{border-left-color:#ebcb8b !important}div.callout-warning.callout-style-default .callout-caption{background-color:#ebcb8b !important}div.callout-warning.callout-style-default .callout-title{background-color:rgba(235,203,139,0.501961) !important}div.callout-tip{border-left-color:#a3be8c !important}div.callout-tip.callout-style-default .callout-caption{background-color:#a3be8c !important}div.callout-tip.callout-style-default .callout-title{background-color:rgba(163,190,140,0.501961) !important}.callout-icon-container>p{color:#a1b6cf !important}div.callout-caution .callout-icon::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%2388c0d0' viewbox='0 0 16 16'%3E%3Cpath d='m8,0C3.58,0,0,3.58,0,8s3.58,8,8,8,8-3.58,8-8S12.42,0,8,0Zm0,1.02c3.85,0,6.98,3.12,6.98,6.98s-3.12,6.98-6.98,6.98S1.02,11.85,1.02,8,4.15,1.02,8,1.02Zm.12,1.7c-.44,0-.85.06-1.22.16-.38.11-.73.28-1.03.5-.26.19-.51.43-.7.68-.33.44-.52.93-.56,1.5,0,.04,0,.07,0,.07,0,0,1.74.22,1.74.22,0,0,0-.02.02-.08.16-.65.44-1.08.88-1.34.35-.21.78-.29,1.26-.24.22.02.42.08.59.16.22.1.41.27.56.46.12.17.2.37.22.58,0,.06,0,.2,0,.26-.02.15-.06.27-.12.4-.06.13-.12.2-.22.3-.16.17-.41.39-.86.75-.29.24-.48.41-.65.59-.4.41-.58.73-.68,1.18-.07.3-.1.6-.09,1.06,0,.11,0,.22,0,.24v.03h1.73v-.19c0-.26.02-.43.05-.59.05-.26.11-.4.32-.62.13-.14.3-.3.55-.52.38-.32.65-.56.9-.81.39-.39.6-.66.74-.98.11-.25.18-.49.2-.76,0-.07,0-.24,0-.32-.04-.56-.25-1.06-.65-1.52-.06-.07-.22-.23-.3-.3-.4-.35-.86-.59-1.4-.73-.34-.08-.66-.13-1.07-.14-.06,0-.13,0-.19,0h0Zm-.87,8.29v1.76h1.76v-1.76h-1.76Z'%3E%3C/path%3E%3C/svg%3E") !important}div.callout-tip .callout-icon::before{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAp1JREFUWEftls1rE0EUwN9mu0ZR/IDsNilaQUQPiv4BglhpbRPRgpTeBvI32HTjMadKuqn4JyzMsXhQaddYURQ8eFT0IOLBz3SbVpQqNo2bSkZ32WxmZme3uQjmtGTex2/ee/PekyDKb6m4D8vqV54Kan4ehNEbH0TNSkKCd6dSeHemLiT7V0gUhA+wBRJ+VGnRHKNm/QzIidfkzGkdx4r6NCiXb6yMO9nZOzxwNgDFOXLqh2Gk/J4biaXiIJbVd34ZdL7A9MM8wA8rW6JGaECi+nSA+/oA7tM+uYZ5N+BFww+BNuyjkDPeBuWpAB2KnPCJFGWYrW6A6tVDWBkgeUatL2kYnrFFHDFlqgUNK2liA/2yj8EF441ftgsgjDgODM8mEyDfrOWc0TkrjsOgjlydyppKZpFEIZBSJgBy6vthpPytFwDg66Bo9VkfTM47rl02wDaLLwjupgG11lIwfH2NDuBrPnGfHitiHoD08QAM3fTmCTsCP2oqXJpb7UkKfLMEDRUSIIHX5NhFuGlPOGPGrV4AyJZ+xUxqxJZwEdKE48JEeobw4NoRnEiRlokay6chW3kR1zHRswqncDL9/E9j6yzA9n/hrfjJdxlKJepIDgUrlRL47B7vydEKmz6MfO1zO6noCP36yl4Yn10XGkZtIdmazpnJ/oX2d75hTzpZYz70xj4BuapPmIpGdNCGfQ5yxmOaPncj6rhBlF1vUT+Id2reXhhrISG0ga1ItDlFGWjhS+m94gm8Q31JQikyH/x9f7N+EsbKr3ipCwcAgCg3iiLLfIZd49TSL5tJ7XaUIhTZiIUBIPCeRUCQYP8QSkHbYXDLDYMQLdj/AP9OBKLUgWj+xV+BW3EL02m8q7/GK0D0087ARWM5rEjd89/mEzIwY1V62wAAAABJRU5ErkJggg==") !important}div.callout-warning .callout-icon::before{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAA4dJREFUWEfFVmtP01AYXmGbEJB1iEhwF4aIMYZoiKKBrWIiGIUyKGMJxpgYEow/gO985w+IGj+YeGM36DZNIFG2ghc03mJilOgYVQMBWYdiZB3MnINbumVd2xHkfOnJOe/leZ7z9j0HkW3zQLY5vyxrACFHGxbVmXyAgJz2N6oJN5xLHVkBCDlbD0e1J99wk8mDVK3aQr7ecgCxmAxZfDmwni5RydG+HASRxaSAkKxA2I53R/TYHZAkNzCFgu+aoY4BXyVNXVAR5O0tAzB3q7kg92DTL3juQapHbSFvgnnIab4U1RrhPBaY2llqtUEbMUOSAgsvBhLylnhXcpH+fngUsf7+nMWWgrV4wt3H+kTHFW0YHmqrihhM01Dq4MQJlWXkOZdh2NVeF9E0wDVl0FetsnigrdAQDYDLno+hGJtUQKIAhF342YgGewCc879TZYVmcj5sNx+P6I3PuIr8dHaU/tHWz8O1WapV1Ul6N61AbKhLuWioW009Xy5bsBdXJalOFh7lIeceJnzTgRFUICngq2klcvkaCwLxAYgN9ioWa/dHxBZkRgALI23lsnLTNxBMQVPNKEGOxQPzAQD7jMN8mtUZoS0S8GlKrB4YQ7ICmYoqE4BUhTL9lrwKLNvM9asVxknIPuCvRK3uAJeBEICQq70iqmmAPrm0z1RMeCZEKyCmsXBbsjLoP6+yuO+mJkiqn8CUHLHaEs0qbptWAcaB97I6bBAYsXP+gnLc/Ts1eMjW3hitaHgM1uUzk6fUXcPjqTb0UFd+nqEO+ipo6gpKkFcF+wDjaVGzexqX/jlZUYK0pZNu2dlRvaqt/wj2dtBPDhQRrk/p7Bg73snqMTvYUwamdqmsNhibVwGx3Yx7LQtdw5liJh3B0rC5Zm2v8d1G4YzXFBPe93y/j5T1H3b80Loeg7HktO+ImvC8TauAWPZSksdtkwqS83BJKMDYcSurx+7Ds58fL0ZbvaFMiRhnWxOrNY1C+xn/GbTLDed8I+RqR6OaBhhTSVPdKoK8B+YQAPehoQhSvaiFvC7EUqgPpC1IB97D6rAbYG/tw1hh2cXRFQiA76GRCUQ2ANL1F4RxtFSyusbPG7+Tr76I8DwVYg/2pR5BPCb3Gld8naxCtrLw+IhwcyYAKGbH96Gd3i9i2G/WhntPJCmw2cDZ+CPMEG5gDdh/YZ4KEKgu+CLKhpUUn20H8BfRiJwMGfDNGwAAAABJRU5ErkJggg==") !important}div.callout-important .callout-icon::before{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAqtJREFUWEdjZCAS3A4NFf3z/7f2XavY/fi0KB9b7Mj6l/Gayvr1r4gxmpGQomtBQfL3bKIfEFKHTV7pyFIFrXXrHuLTi9MBj0NDOS9aRnzDpVn56CIP9t//L3xn/8PI9I9V/6513A5cavWPr+CSXb36OzZ5rA64Geyrcds64TqyBvVDi1VUN2y4S0xI3A4IUL5pF3sHWa3q0QWa6ms330DXj+GA28F+hjet48/BFCofX2KluXr9cWIsRldzPTTQ8q5lzDGYuPrRhUaqazedR1aH4oAbfn5Sdxzin8IUGO1fwC21eTPOaCDGUc98fbnOOSZ8halVObBQWmPTpmcwPtwB/0NDmbdaRvyBSUjc2MlmMmvWb2IsIaTmTFoa6wsN918wdd7HV7Awrl79F8SHO2BL39r/MAWqpxeIqi/f/IaQwaTI34z0FbltmvAapsenKBhsN5i44+8ve8M+7hGIrXZkkavauo17CBl+K9jf/JZ13AmwnqOLLNTWbjxJUE+Qv8stm7jdIHUaBxfJqWzc+BjsAGTfw1xGyDBkPSC15OgD6WG8HhgofNc2BhzcyoeXqGuuX3+LkOXojibFAdcDA9Xu2sbchNonwkiO7ylxALreweMA9aMLdFTXbr5KTPBTGgK3g321b1onXAHnAlgU4CuvsTmK3EQIMgu5noE7gNhUDHPM9ZAAB1jVDKqCNddsOEBs6CGHIPkOQE3NROcemCNhIUh2FPxnYGDc2rf2H8hA76JgJkYGBnhJSigksEYBqYmQkCX45LEmQlIKE0osp1o5cCvQz/WWbfwukIHqxxa7q67ZAGYTA5Bz0MAXxQNeGYEcQFZ1TEYU3MJVHaOHAt0bJCAHDHiTDOSIAW2UwrLPgDbLYY4Y0I4JzBED2jVDLs0GrHOKXqTSqnsOAJxF1JQ5aCVbAAAAAElFTkSuQmCC") !important}div.callout-note .callout-icon::before{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAuxJREFUWEdjZCASeLY9F/39l0U7TX3/fnxaZt10dGT6+/fargaJV8QYzUhIkVPLe/kMtd0PCKnDJj/jlqvCvhrBh/j04nSAZd9jzkKZ499waZ513dnjP8ufC39/MzKyMDLrp2nu3YFLbf8TS67jRbLfscljdYBbwxuNFK1915E1zLhpr7KvVvwuMSHh1PxSOUP94B1ktXOuOWnuahC5ga4fwwEuTa8M0zQOnIMpnHnD2WpvnfBxYixGV+Pc9NYyXWPvMZj4rBsORnvqxM4jq0NxgGvDa6lUrf1PYQoWX7Ph3twghTMaiHGUb8MzrlitI19hamdfc5Te3SD6DMaHOyB01X/mUIbVf2ASne9D2c6mM/4mxhJCaoxn/mctF1z9C6ZuNUMoy+owxr8gPtwBq1at+g9TMO2ah+iBBr43+Ax2a3zrmqK5dxdIzZzrzm676oV341Pv0PBJJEtrx2uYmrCwMLDdYMKt5a1sitreRyD2zJtOrntrRfYQ8hWyg0FqYQbi0+fc/MYlXX0f2KFzbjnL7aoRfgx2ALJhxBiErodYB2Czi9G57ZNwusoOcHDPvOaovrdB9BYh34NDjcQogJnp3PBaLV1r/02wfXc8RBjJ8T0xDsSnBtnOweOAuTecdXbWCV8lxncuLW8t0tT2ohROxKYdkPnuTW+1kzX2XgHnAlhw4Cuv0R2FngNISYQgtcj1DNwBpPiAklwA8wzME1RxwLybjho7akXBKZtYgOEAUqIAIz+HhjIxMDLCS1JCjsAaBaQkQvQKhtTow5oISUlILi3vbNLU9hyG+ZRUB1BcDiAbMOe6o9+uetHNhIIdWR7FAeQUxcgGzLxtL7G3WvwlsQ7AKIrJqYwoKb7R9ZJVHZNbEOGsjtFDgVCDBN0B8685y25vEH6CLxrwNkhAGklqkv3/z+jU+kGOhf3nm12lEvD2Hi4HENUkA2ke0EYpzPUD2iyHOWJAOyYwRwxo1ww5MQ1Y5xQ9RdOqew4AmQrjruDNt+sAAAAASUVORK5CYII=") !important}.reveal .smaller .callout.callout-titled .callout-icon::before{margin-top:0.5rem !important}
+div.callout-caution{border-left-color:#5e81ac !important}div.callout-caution.callout-style-default .callout-caption{background-color:#5e81ac !important}div.callout-caution.callout-style-default .callout-title{background-color:rgba(94,129,172,0.501961) !important}div.callout-note{border-left-color:#b48ead !important}div.callout-note.callout-style-default .callout-caption{background-color:#b48ead !important}div.callout-note.callout-style-default .callout-title{background-color:rgba(180,142,173,0.501961) !important}div.callout-important{border-left-color:#d08770 !important}div.callout-important.callout-style-default .callout-caption{background-color:#d08770 !important}div.callout-important.callout-style-default .callout-title{background-color:rgba(208,135,112,0.501961) !important}div.callout-warning{border-left-color:#ebcb8b !important}div.callout-warning.callout-style-default .callout-caption{background-color:#ebcb8b !important}div.callout-warning.callout-style-default .callout-title{background-color:rgba(235,203,139,0.501961) !important}div.callout-tip{border-left-color:#a3be8c !important}div.callout-tip.callout-style-default .callout-caption{background-color:#a3be8c !important}div.callout-tip.callout-style-default .callout-title{background-color:rgba(163,190,140,0.501961) !important}.callout-icon-container>p{color:#a1b6cf !important}div.callout-caution .callout-icon::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='https://www.w3.org/2000/svg' width='16' height='16' fill='%2388c0d0' viewbox='0 0 16 16'%3E%3Cpath d='m8,0C3.58,0,0,3.58,0,8s3.58,8,8,8,8-3.58,8-8S12.42,0,8,0Zm0,1.02c3.85,0,6.98,3.12,6.98,6.98s-3.12,6.98-6.98,6.98S1.02,11.85,1.02,8,4.15,1.02,8,1.02Zm.12,1.7c-.44,0-.85.06-1.22.16-.38.11-.73.28-1.03.5-.26.19-.51.43-.7.68-.33.44-.52.93-.56,1.5,0,.04,0,.07,0,.07,0,0,1.74.22,1.74.22,0,0,0-.02.02-.08.16-.65.44-1.08.88-1.34.35-.21.78-.29,1.26-.24.22.02.42.08.59.16.22.1.41.27.56.46.12.17.2.37.22.58,0,.06,0,.2,0,.26-.02.15-.06.27-.12.4-.06.13-.12.2-.22.3-.16.17-.41.39-.86.75-.29.24-.48.41-.65.59-.4.41-.58.73-.68,1.18-.07.3-.1.6-.09,1.06,0,.11,0,.22,0,.24v.03h1.73v-.19c0-.26.02-.43.05-.59.05-.26.11-.4.32-.62.13-.14.3-.3.55-.52.38-.32.65-.56.9-.81.39-.39.6-.66.74-.98.11-.25.18-.49.2-.76,0-.07,0-.24,0-.32-.04-.56-.25-1.06-.65-1.52-.06-.07-.22-.23-.3-.3-.4-.35-.86-.59-1.4-.73-.34-.08-.66-.13-1.07-.14-.06,0-.13,0-.19,0h0Zm-.87,8.29v1.76h1.76v-1.76h-1.76Z'%3E%3C/path%3E%3C/svg%3E") !important}div.callout-tip .callout-icon::before{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAp1JREFUWEftls1rE0EUwN9mu0ZR/IDsNilaQUQPiv4BglhpbRPRgpTeBvI32HTjMadKuqn4JyzMsXhQaddYURQ8eFT0IOLBz3SbVpQqNo2bSkZ32WxmZme3uQjmtGTex2/ee/PekyDKb6m4D8vqV54Kan4ehNEbH0TNSkKCd6dSeHemLiT7V0gUhA+wBRJ+VGnRHKNm/QzIidfkzGkdx4r6NCiXb6yMO9nZOzxwNgDFOXLqh2Gk/J4biaXiIJbVd34ZdL7A9MM8wA8rW6JGaECi+nSA+/oA7tM+uYZ5N+BFww+BNuyjkDPeBuWpAB2KnPCJFGWYrW6A6tVDWBkgeUatL2kYnrFFHDFlqgUNK2liA/2yj8EF441ftgsgjDgODM8mEyDfrOWc0TkrjsOgjlydyppKZpFEIZBSJgBy6vthpPytFwDg66Bo9VkfTM47rl02wDaLLwjupgG11lIwfH2NDuBrPnGfHitiHoD08QAM3fTmCTsCP2oqXJpb7UkKfLMEDRUSIIHX5NhFuGlPOGPGrV4AyJZ+xUxqxJZwEdKE48JEeobw4NoRnEiRlokay6chW3kR1zHRswqncDL9/E9j6yzA9n/hrfjJdxlKJepIDgUrlRL47B7vydEKmz6MfO1zO6noCP36yl4Yn10XGkZtIdmazpnJ/oX2d75hTzpZYz70xj4BuapPmIpGdNCGfQ5yxmOaPncj6rhBlF1vUT+Id2reXhhrISG0ga1ItDlFGWjhS+m94gm8Q31JQikyH/x9f7N+EsbKr3ipCwcAgCg3iiLLfIZd49TSL5tJ7XaUIhTZiIUBIPCeRUCQYP8QSkHbYXDLDYMQLdj/AP9OBKLUgWj+xV+BW3EL02m8q7/GK0D0087ARWM5rEjd89/mEzIwY1V62wAAAABJRU5ErkJggg==") !important}div.callout-warning .callout-icon::before{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAA4dJREFUWEfFVmtP01AYXmGbEJB1iEhwF4aIMYZoiKKBrWIiGIUyKGMJxpgYEow/gO985w+IGj+YeGM36DZNIFG2ghc03mJilOgYVQMBWYdiZB3MnINbumVd2xHkfOnJOe/leZ7z9j0HkW3zQLY5vyxrACFHGxbVmXyAgJz2N6oJN5xLHVkBCDlbD0e1J99wk8mDVK3aQr7ecgCxmAxZfDmwni5RydG+HASRxaSAkKxA2I53R/TYHZAkNzCFgu+aoY4BXyVNXVAR5O0tAzB3q7kg92DTL3juQapHbSFvgnnIab4U1RrhPBaY2llqtUEbMUOSAgsvBhLylnhXcpH+fngUsf7+nMWWgrV4wt3H+kTHFW0YHmqrihhM01Dq4MQJlWXkOZdh2NVeF9E0wDVl0FetsnigrdAQDYDLno+hGJtUQKIAhF342YgGewCc879TZYVmcj5sNx+P6I3PuIr8dHaU/tHWz8O1WapV1Ul6N61AbKhLuWioW009Xy5bsBdXJalOFh7lIeceJnzTgRFUICngq2klcvkaCwLxAYgN9ioWa/dHxBZkRgALI23lsnLTNxBMQVPNKEGOxQPzAQD7jMN8mtUZoS0S8GlKrB4YQ7ICmYoqE4BUhTL9lrwKLNvM9asVxknIPuCvRK3uAJeBEICQq70iqmmAPrm0z1RMeCZEKyCmsXBbsjLoP6+yuO+mJkiqn8CUHLHaEs0qbptWAcaB97I6bBAYsXP+gnLc/Ts1eMjW3hitaHgM1uUzk6fUXcPjqTb0UFd+nqEO+ipo6gpKkFcF+wDjaVGzexqX/jlZUYK0pZNu2dlRvaqt/wj2dtBPDhQRrk/p7Bg73snqMTvYUwamdqmsNhibVwGx3Yx7LQtdw5liJh3B0rC5Zm2v8d1G4YzXFBPe93y/j5T1H3b80Loeg7HktO+ImvC8TauAWPZSksdtkwqS83BJKMDYcSurx+7Ds58fL0ZbvaFMiRhnWxOrNY1C+xn/GbTLDed8I+RqR6OaBhhTSVPdKoK8B+YQAPehoQhSvaiFvC7EUqgPpC1IB97D6rAbYG/tw1hh2cXRFQiA76GRCUQ2ANL1F4RxtFSyusbPG7+Tr76I8DwVYg/2pR5BPCb3Gld8naxCtrLw+IhwcyYAKGbH96Gd3i9i2G/WhntPJCmw2cDZ+CPMEG5gDdh/YZ4KEKgu+CLKhpUUn20H8BfRiJwMGfDNGwAAAABJRU5ErkJggg==") !important}div.callout-important .callout-icon::before{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAqtJREFUWEdjZCAS3A4NFf3z/7f2XavY/fi0KB9b7Mj6l/Gayvr1r4gxmpGQomtBQfL3bKIfEFKHTV7pyFIFrXXrHuLTi9MBj0NDOS9aRnzDpVn56CIP9t//L3xn/8PI9I9V/6513A5cavWPr+CSXb36OzZ5rA64Geyrcds64TqyBvVDi1VUN2y4S0xI3A4IUL5pF3sHWa3q0QWa6ms330DXj+GA28F+hjet48/BFCofX2KluXr9cWIsRldzPTTQ8q5lzDGYuPrRhUaqazedR1aH4oAbfn5Sdxzin8IUGO1fwC21eTPOaCDGUc98fbnOOSZ8halVObBQWmPTpmcwPtwB/0NDmbdaRvyBSUjc2MlmMmvWb2IsIaTmTFoa6wsN918wdd7HV7Awrl79F8SHO2BL39r/MAWqpxeIqi/f/IaQwaTI34z0FbltmvAapsenKBhsN5i44+8ve8M+7hGIrXZkkavauo17CBl+K9jf/JZ13AmwnqOLLNTWbjxJUE+Qv8stm7jdIHUaBxfJqWzc+BjsAGTfw1xGyDBkPSC15OgD6WG8HhgofNc2BhzcyoeXqGuuX3+LkOXojibFAdcDA9Xu2sbchNonwkiO7ylxALreweMA9aMLdFTXbr5KTPBTGgK3g321b1onXAHnAlgU4CuvsTmK3EQIMgu5noE7gNhUDHPM9ZAAB1jVDKqCNddsOEBs6CGHIPkOQE3NROcemCNhIUh2FPxnYGDc2rf2H8hA76JgJkYGBnhJSigksEYBqYmQkCX45LEmQlIKE0osp1o5cCvQz/WWbfwukIHqxxa7q67ZAGYTA5Bz0MAXxQNeGYEcQFZ1TEYU3MJVHaOHAt0bJCAHDHiTDOSIAW2UwrLPgDbLYY4Y0I4JzBED2jVDLs0GrHOKXqTSqnsOAJxF1JQ5aCVbAAAAAElFTkSuQmCC") !important}div.callout-note .callout-icon::before{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAuxJREFUWEdjZCASeLY9F/39l0U7TX3/fnxaZt10dGT6+/fargaJV8QYzUhIkVPLe/kMtd0PCKnDJj/jlqvCvhrBh/j04nSAZd9jzkKZ499waZ513dnjP8ufC39/MzKyMDLrp2nu3YFLbf8TS67jRbLfscljdYBbwxuNFK1915E1zLhpr7KvVvwuMSHh1PxSOUP94B1ktXOuOWnuahC5ga4fwwEuTa8M0zQOnIMpnHnD2WpvnfBxYixGV+Pc9NYyXWPvMZj4rBsORnvqxM4jq0NxgGvDa6lUrf1PYQoWX7Ph3twghTMaiHGUb8MzrlitI19hamdfc5Te3SD6DMaHOyB01X/mUIbVf2ASne9D2c6mM/4mxhJCaoxn/mctF1z9C6ZuNUMoy+owxr8gPtwBq1at+g9TMO2ah+iBBr43+Ax2a3zrmqK5dxdIzZzrzm676oV341Pv0PBJJEtrx2uYmrCwMLDdYMKt5a1sitreRyD2zJtOrntrRfYQ8hWyg0FqYQbi0+fc/MYlXX0f2KFzbjnL7aoRfgx2ALJhxBiErodYB2Czi9G57ZNwusoOcHDPvOaovrdB9BYh34NDjcQogJnp3PBaLV1r/02wfXc8RBjJ8T0xDsSnBtnOweOAuTecdXbWCV8lxncuLW8t0tT2ohROxKYdkPnuTW+1kzX2XgHnAlhw4Cuv0R2FngNISYQgtcj1DNwBpPiAklwA8wzME1RxwLybjho7akXBKZtYgOEAUqIAIz+HhjIxMDLCS1JCjsAaBaQkQvQKhtTow5oISUlILi3vbNLU9hyG+ZRUB1BcDiAbMOe6o9+uetHNhIIdWR7FAeQUxcgGzLxtL7G3WvwlsQ7AKIrJqYwoKb7R9ZJVHZNbEOGsjtFDgVCDBN0B8685y25vEH6CLxrwNkhAGklqkv3/z+jU+kGOhf3nm12lEvD2Hi4HENUkA2ke0EYpzPUD2iyHOWJAOyYwRwxo1ww5MQ1Y5xQ9RdOqew4AmQrjruDNt+sAAAAASUVORK5CYII=") !important}.reveal .smaller .callout.callout-titled .callout-icon::before{margin-top:0.5rem !important}
 </style>
 </div>
 </div>
@@ -425,19 +426,19 @@ div.callout-caution{border-left-color:#5e81ac !important}div.callout-caution.cal
 <aside><ol class="aside-footnotes"><li id="fn1"><p>Slight caveat about a bug that we will see later…</p></li></ol></aside></section>
 <section class="slide level2">
 <h2>Quarto basics</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># My title</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Some text</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>Some *italic text*</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Some **bold text**</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">3</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>x</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu"># My title</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a>Some text</span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a>Some *italic text*</span>
+<span id="cb1-6"><a href="#cb1-6"></a></span>
+<span id="cb1-7"><a href="#cb1-7"></a>Some **bold text**</span>
+<span id="cb1-8"><a href="#cb1-8"></a></span>
+<span id="cb1-9"><a href="#cb1-9"></a></span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="in">```{r}</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="in">x &lt;- 3</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a><span class="in">x</span></span>
+<span id="cb1-13"><a href="#cb1-13"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section class="slide level2">
 <h2>Quarto basics</h2>
@@ -458,12 +459,12 @@ div.callout-caution{border-left-color:#5e81ac !important}div.callout-caution.cal
 <p>Some of the ones I find myself using most often:</p>
 <div class="cell" data-hash="quarto_cache/revealjs/unnamed-chunk-3_23295a859aade123fe9ed7eca7b61b92">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1"></a><span class="in">```{r}</span></span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="co">#| eval: false</span></span>
-<span id="cb4-3"><a href="#cb4-3"></a><span class="co">#| error: true</span></span>
-<span id="cb4-4"><a href="#cb4-4"></a><span class="co">#| cache: true</span></span>
-<span id="cb4-5"><a href="#cb4-5"></a><span class="co">#| warning: false</span></span>
-<span id="cb4-6"><a href="#cb4-6"></a><span class="co">#| message: false</span></span>
-<span id="cb4-7"><a href="#cb4-7"></a>x <span class="ot">&lt;-</span> <span class="dv">3</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="in">#| eval: false</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="in">#| error: true</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="in">#| cache: true</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="in">#| warning: false</span></span>
+<span id="cb4-6"><a href="#cb4-6"></a><span class="in">#| message: false</span></span>
+<span id="cb4-7"><a href="#cb4-7"></a><span class="in">x &lt;- 3</span></span>
 <span id="cb4-8"><a href="#cb4-8"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Also <code>echo</code> (can’t include above because it conflicts with my slide options!)</p>
@@ -472,9 +473,9 @@ div.callout-caution{border-left-color:#5e81ac !important}div.callout-caution.cal
 <h2>Chunks can produce figures or tables</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1"></a><span class="in">```{r}</span></span>
-<span id="cb5-2"><a href="#cb5-2"></a><span class="co">#| label: tbl-one</span></span>
-<span id="cb5-3"><a href="#cb5-3"></a><span class="co">#| tbl-cap: "This is a great table"</span></span>
-<span id="cb5-4"><a href="#cb5-4"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(mtcars)</span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="in">#| label: tbl-one</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a><span class="in">#| tbl-cap: "This is a great table"</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="in">knitr::kable(mtcars)</span></span>
 <span id="cb5-5"><a href="#cb5-5"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div id="tbl-one">
@@ -969,9 +970,9 @@ div.callout-caution{border-left-color:#5e81ac !important}div.callout-caution.cal
 <h2>Chunks can produce figures or tables</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1"></a><span class="in">```{r}</span></span>
-<span id="cb6-2"><a href="#cb6-2"></a><span class="co">#| label: fig-hist</span></span>
-<span id="cb6-3"><a href="#cb6-3"></a><span class="co">#| fig-cap: "This is a histogram"</span></span>
-<span id="cb6-4"><a href="#cb6-4"></a><span class="fu">hist</span>(<span class="fu">rnorm</span>(<span class="dv">100</span>))</span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="in">#| label: fig-hist</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="in">#| fig-cap: "This is a histogram"</span></span>
+<span id="cb6-4"><a href="#cb6-4"></a><span class="in">hist(rnorm(100))</span></span>
 <span id="cb6-5"><a href="#cb6-5"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
@@ -983,7 +984,7 @@ div.callout-caution{border-left-color:#5e81ac !important}div.callout-caution.cal
 <pre><code>@fig-hist contains a histogram and @tbl-one a table.</code></pre>
 </div>
 <p>gets printed as:</p>
-<p><a href="#/fig-hist">Figure&nbsp;1</a> contains a histogram and <a href="#/tbl-one">Table&nbsp;1</a> a table.</p>
+<p><a href="#/fig-hist" class="quarto-xref">Figure&nbsp;1</a> contains a histogram and <a href="#/tbl-one" class="quarto-xref">Table&nbsp;1</a> a table.</p>
 </section>
 <section class="slide level2">
 <h2>Inline R</h2>
@@ -1039,7 +1040,6 @@ div.callout-caution{border-left-color:#5e81ac !important}div.callout-caution.cal
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': true,
-'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -1339,10 +1339,9 @@ div.callout-caution{border-left-color:#5e81ac !important}div.callout-caution.cal
         // clear code selection
         e.clearSelection();
       });
-      function tippyHover(el, contentFn) {
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
-          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -1352,8 +1351,17 @@ div.callout-caution{border-left-color:#5e81ac !important}div.callout-caution.cal
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start'
+          placement: 'bottom-start',
         };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 

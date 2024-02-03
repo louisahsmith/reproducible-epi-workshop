@@ -1,6 +1,7 @@
 ---
 title: "targets"
 toc-location: left
+format: html
 ---
 
 # Overview

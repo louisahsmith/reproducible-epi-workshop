@@ -15,8 +15,7 @@ website:
       - gtsummary.qmd
       - targets.qmd
     right:
-      - text: "Data"
-        file: data.qmd
+      - data.qmd
 
 format:
   html:

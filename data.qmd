@@ -1,5 +1,6 @@
 ---
-title: "NLSY data"
+title: "Data"
+format: html
 ---
 
 ![](https://www.nlsinfo.org/sites/default/files/images/NLSY79_0.png)
