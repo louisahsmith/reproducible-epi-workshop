@@ -31,7 +31,7 @@ Open the slides in a new tab [here](slides/targets.html){target="_blank"}.
 
 # Exercises
 
-1. Download a new R project as a zip file (green "Code" button -> "Download ZIP"). (If you are familiar with git/github, feel free to clone it directly.)
+1. Download [this R project](https://github.com/louisahsmith/reproducible-epi-workshop-2023) as a zip file (green "Code" button -> "Download ZIP"). (If you are familiar with git/github, feel free to clone it directly.)
 2. Examine the file structure, the code, the `_targets.R` file.
 3. Run `tar_make()`.
 4. Examine everything again and see what's new.

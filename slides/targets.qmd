@@ -253,7 +253,7 @@ In big projects, I comment my `_targets.R` file so that I can use the RStudio ou
 -   `tar_visnetwork()` creates a network diagram of the pipeline
 -   `tar_outdated()` checks which targets need to be updated
 -   `tar_prune()` deletes targets that are no longer in `_targets.R`
--   `tar_destroy()` deletes the `.targets/` directory if you need to burn everything down and start again
+-   `tar_destroy()` deletes the `_targets/` directory if you need to burn everything down and start again
 
 [^1]: Note: `{targets}` is moving to a new distributed computing strategy using `{crew}`
 
